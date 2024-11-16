@@ -10,13 +10,11 @@ build_search_index = true
 theme = "zola-paper"
 
 title = "Victor Viale — Today I learned"
-description = "hi"
+description = "A few bits and pieces I gathered for you to maybe care about"
 
 taxonomies = [
     {name = "tags", rss = true, paginate_by = 10},
 ]
-
-
 
 [markdown]
 # Whether to do syntax highlighting
