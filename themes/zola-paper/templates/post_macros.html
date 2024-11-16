@@ -1,0 +1,17 @@
+{% macro page_in_list(page) %}
+                    <header class="entry-header">
+                        <h2>{{ page.title }}</h2>
+                    </header>
+                    <div class="post-content">{{ page.content | safe }}</div>
+                    <footer class="entry-footer">
+                        {% if page.taxonomies.tags %}
+                        <ul class="post-tags">
+                        {% for tag in page.taxonomies.tags %}
+                            <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a></li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                        <time>{{ page.date | date(format="%B %e, %Y") }}</time>
+                    </footer>
+                    <a class="entry-link" href="{{ page.permalink }}"></a>
+{% endmacro page_in_list %}
