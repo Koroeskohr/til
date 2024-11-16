@@ -259,9 +259,6 @@
     border-radius: var(--radius);
     transition: transform 0.1s;
   }
-  .post-entry:active {
-    transform: scale(0.96);
-  }
   .tag-entry .entry-content,
   .tag-entry .entry-footer {
     display: none;
@@ -286,13 +283,6 @@
   .entry-footer {
     color: var(--secondary);
     font-size: 13px;
-  }
-  .entry-link {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
   /* Post single
   -------------------------------------------------- */
